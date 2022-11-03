@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CalculatorComponent {
   deshabilitar = false;
-  amountA = '';
-  amountB = '';
-  result = '';
+  amountA: number = 0;
+  amountB: number = 0;
+  result: number = 0;
 
-  sumar() {
-    let sum = this.amountA + this.amountB;
-    console.log(sum);
-    this.result = sum;
+  sumar(): void {
+    this.result = this.amountA + this.amountB;
+
+    // this.result = sum;
   }
 }

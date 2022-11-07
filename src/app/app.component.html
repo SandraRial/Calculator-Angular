@@ -1,1 +1,5 @@
-<app-calculator></app-calculator>
+<div class="page">
+  <h1>Aplicación de Calculadora</h1>
+  <app-formulario (resultadoSuma)="processResult($event)"></app-formulario>
+  <app-resultado [resultadoHijo]="resultadoPadre"></app-resultado>
+</div>

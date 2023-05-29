@@ -16,6 +16,5 @@ export class FormularioComponent {
   sumar(): void {
     let resultado = this.amountA + this.amountB;
     this.resultadoSuma.emit(resultado);
-    // this.result = sum;
   }
 }
